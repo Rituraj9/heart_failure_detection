@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.7">
+         <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+                  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+                <link href="static/css/prediction.css" rel="stylesheet">
+        <title>Prediction</title>
+    </head>
+    <body>
+        <br>
+            <div class='container'>             
+            <div class="jumbotron" id="one">
+                <h1 class="display-4">According To Reports</h1>
+                <p class="lead">{{prediction_text}}</p>
+                <hr class="my-4">
+                <p>Accuracy of The Report is {{accuracy}}</p>
+                <a href="{{url_for('detect')}}" class='btn btn-primary'>go back</a>
+            <a href="{{url_for('home')}}" class='btn btn-primary'>Home</a>
+            <p>
+            </div>
+            <hr>
+            <h1>Nutrients to Support Heart Health</h1>
+            <hr>
+            <div data-aos="fade-in" data-aos-duration=1000>
+            <div class="jumbotron" id="three">
+                <h1 class="display-4">Leafy Green Vegetables</h1>
+                <p class="lead">Studies show that eating whole grains is associated with lower cholesterol and systolic blood pressure, as well as a lower risk of heart disease.</p>
+            </div>
+            <div class="jumbotron" id="three">
+                <h1 class="display-4">Whole Grains</h1>
+                <p class="lead">Leafy green vegetables are high in vitamin K and nitrates, which can help reduce blood pressure and improve arterial function. Studies show that a higher intake of leafy greens is associated with a lower risk of heart disease.</p>
+            </div>
+            <div class="jumbotron" id="three">
+                <h1 class="display-4">Berries</h1>
+                <p class="lead">Berries are rich in antioxidants. Studies show that eating them can reduce multiple risk factors for heart disease.</p>
+            </div>
+            <div class="jumbotron" id="three">
+                <h1 class="display-4">Avocados</h1>
+                <p class="lead">Avocados are high in monounsaturated fats and potassium. They may help lower your cholesterol, blood pressure and risk of metabolic syndrome.</p>
+            </div>
+            <div class="jumbotron" id="three">
+                <h1 class="display-4">Fatty Fish and Fish Oil</h1>
+                <p class="lead">Fatty fish and fish oil are both high in omega-3 fatty acids and may help reduce heart disease risk factors, including blood pressure, triglycerides and cholesterol.</p>
+            </div>
+            <div class="jumbotron" id="three">                
+                <h1 class="display-4">Walnuts</h1>
+                <p class="lead">Studies suggest that walnuts can help reduce cholesterol and blood pressure and may be associated with a lower risk of heart disease.</p>
+            </div>
+            <div class="jumbotron" id="three">
+                <h1 class="display-4">Beans</h1>
+                <p class="lead">Beans are high in resistant starch and have been shown to reduce levels of cholesterol and triglycerides, lower blood pressure and decrease inflammation.</p>
+            </div>
+            <div class="jumbotron" id="three">
+                <h1 class="display-4">Dark Chocolate</h1>
+                <p class="lead">Dark chocolate is high in antioxidants like flavonoids. It has been associated with a lower risk of developing calcified plaque in the arteries and coronary heart disease.</p>
+            </div>
+        </div>
+            <p class="slogan">"A healthy heart keeps you strong"</p>
+            <p class="slogan">&copyLazyCodeGeeks~All Rights Reserved</p> 
+        </div>
+        <!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    </body>
+</html>

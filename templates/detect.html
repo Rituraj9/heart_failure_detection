@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+         <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<title>Heart Attack</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="{{url_for('home')}}">Pace Makers</a>
+</nav><br>
+ <div class="login">
+	<h1>Predict Heart Failure Occurance</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}" method="post">
+    	<input type="number" name="age" placeholder="Age" required="required" min=1 />
+        <input type="number" name="anaemia" placeholder="Anaemia (type 0 for No or 1 for Yes)" required="required" min=0 max=1 />
+        <input type="number" name="creatinine_phosphokinase" placeholder="creatinine_phosphokinase" required="required" />
+        <input type="number" name="diabetes" placeholder="diabetes(type 0 for No or 1 for Yes)" required="required" min=0 max=1 />
+        <input type="number" name="ejection_fraction" placeholder="ejection_fraction" required="required" />
+        <input type="number" name="high_blood_pressure" placeholder="high_blood_pressure(type 0 for No or 1 for Yes)" min=0 max=1 required="required" />
+        <input type="number" name="platelets" placeholder="platelets" required="required" />
+        <input type="number" name="serum_creatinine" placeholder="serum_creatinine" step=any required="required" />
+        <input type="number" name="serum_sodium" placeholder="serum_sodium" step=any required="required" />
+        <input type="number" name="sex" placeholder="sex (type 1 for Male or 0 for female)" min=0 max=1 required="required" />
+        <input type="number" name="smoking" placeholder="smoking (type 1 for Smoker or 0 for Non-Smoker)" required="required" min=0 max=1 />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+    <p class="footer">&copyLazyCodeGeeks~All Rights Reserved</p> 
+ </div>
+
+
+</body>
+</html>
